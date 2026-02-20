@@ -1,0 +1,4 @@
+Flask==2.3.5
+gunicorn==21.2.0
+trimesh==3.22.0          # for basic 3D model creation
+numpy==1.26.0

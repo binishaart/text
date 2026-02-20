@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text-to-3D Model</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text-to-3D Model Generator</h1>
+        <form method="POST">
+            <input type="text" name="prompt" placeholder="Enter prompt e.g., sphere" required>
+            <button type="submit">Generate 3D Model</button>
+        </form>
+
+        {% if model_file %}
+        <h2>Your Model:</h2>
+        <a href="{{ model_file }}" download>Download 3D Model (GLB)</a>
+        {% endif %}
+    </div>
+</body>
+</html>
